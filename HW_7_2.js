@@ -26,3 +26,4 @@ for (let player of players) {
   MaxScorePoint = Math.max(...playerScorePoints);
 }
 console.log(MaxScorePoint);
+console.log(players[0]);
