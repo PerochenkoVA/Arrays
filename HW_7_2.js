@@ -20,9 +20,9 @@ const players = [
     scorePoints: 2356,
   },
 ];
-
-let MaxscorePointPlayer = 0;
+const playerScorePoints = [4500, 3600, 3433, 2356];
+let MaxScorePoint = 0;
 for (let player of players) {
-  MaxscorePointPlayer = Math.max(4500, 3600, 3433, 2356);
+  MaxScorePoint = Math.max(...playerScorePoints);
 }
-console.log(MaxscorePointPlayer);
+console.log(MaxScorePoint);
