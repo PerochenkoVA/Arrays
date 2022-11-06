@@ -10,13 +10,10 @@ class Button {
     console.log(this.props);
   }
   testButton() {
-    console.log(
-      `Я не понимаю , где взять информацию для выполнения этого задания`
-    );
+    console.log(`${this.props} ok`);
   }
 }
 let newButton = new Button(38, 38, "button", "green");
 
-console.log(newButton);
-console.log(newButton.onClick());
+newButton.onClick();
 console.log(newButton.testButton());
