@@ -10,10 +10,13 @@ class Button {
     console.log(this.props);
   }
   testButton() {
-    console.log(`${this.props} ok`);
+    this.props.length === 4;
   }
 }
 let newButton = new Button(38, 38, "button", "green");
-
 newButton.onClick();
-console.log(newButton.testButton());
+
+let tButton = new Button(25, 25, "button", "red");
+console.log(tButton.onClick());
+
+console.log(tButton.testButton());
