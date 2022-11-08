@@ -6,17 +6,19 @@ class Button {
     this.color = color;
     this.props = [width, height, type, color];
   }
-  onClick() {
-    console.log(this.props);
-  }
+  onClick() {}
   testButton() {
-    this.props.length === 4;
+    console.log(this.props.length());
   }
 }
 let newButton = new Button(38, 38, "button", "green");
 newButton.onClick();
-
 let tButton = new Button(25, 25, "button", "red");
+
+for (let i = 0; i > this.props.length; i++) {
+  console.log(`ok1`);
+}
+
 console.log(tButton.onClick());
 
 console.log(tButton.testButton());
