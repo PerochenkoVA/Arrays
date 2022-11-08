@@ -4,7 +4,7 @@ console.log(postomat[3]);
 let codeSMS = "A001DFX0";
 for (codeSMS of postomat) {
   switch (codeSMS) {
-    case "A001DFX0":
+    case codeSMS:
       console.log("You received a parcel from box 4 and your bill is 0");
       break;
     case "":
